@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevOps CI/CD Pipeline Output</title>
+</head>
+<body>
+    <h1>DevOps CI/CD Pipeline Test Successfully!</h1>
+    <p>This output is the same as your Flask app running on EC2.</p>
+
+    <h2>Steps Performed:</h2>
+    <ul>
+        <li>Created Flask app (app.py)</li>
+        <li>Dockerized the app using Dockerfile</li>
+        <li>Configured Jenkins CI/CD pipeline</li>
+        <li>Built Docker image and ran container via Jenkins</li>
+        <li>Verified output: "DevOps CI/CD Pipeline Test Successfully!"</li>
+    </ul>
+
+    <h2>Important Commands Used:</h2>
+    <pre>
+    git init
+    git add .
+    git commit -m "Initial commit"
+    git push origin main
+    docker build -t akshatatodmal33/devops-cicd-app:latest .
+    docker run -d -p 5000:5000 akshatatodmal33/devops-cicd-app:latest
+    </pre>
+</body>
+</html>
